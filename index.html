@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<title>Family Book</title>
+<body>
+<h1>Family Book</h1>
+<hr><hr>
+<img id="family_img" src="Family.jpg">
+<h3 id="one">Our family Book</h3>
+<button type="button" onclick="family()">Next</button>
+<hr>
+<script>
+ var names=[
+ "My father",
+ "My Mother",
+ "My sister",
+ "Myself"];
+ var images=[
+     "father.jpg",
+     "mother.webp",
+     "sister.webp",
+     "brotehr.jpg"
+];
+var i=0;
+function family()
+{
+    i++
+    if(i==4)
+    {
+        i=0;
+    }
+    document.getElementById("one").innerHTML=names[i]
+    document.getElementById("family_img").src=images[i]
+ 
+    
+}
+
+</script>
+</body>
+</html>
